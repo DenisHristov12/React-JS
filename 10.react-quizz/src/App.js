@@ -1,7 +1,9 @@
 import Header from './Header';
+import Loader from './Loader';
 import Main from './Main';
 import { useEffect } from 'react';
 import { useReducer } from 'react';
+import Error from './Error';
 
 const initialState = {
   questions: [],
@@ -22,7 +24,7 @@ function reducer(state, action) {
 }
 
 export default function App() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [{ questions, status }, dispatch] = useReducer(reducer, initialState);
 
   useEffect(function () {
     fetch('http://localhost:9000/questions')
@@ -35,7 +37,10 @@ export default function App() {
     <div className="app">
       <Header />
 
-      <Main></Main>
+      <Main>
+        {status === 'loading' && <Loader></Loader>}
+        {status === 'error' && <Error />}
+      </Main>
     </div>
   );
 }
