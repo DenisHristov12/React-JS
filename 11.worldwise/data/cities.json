@@ -35,6 +35,42 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Carlisle",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-01-11T18:21:49.771Z",
+      "notes": "",
+      "position": {
+        "lat": "54.888749594816765",
+        "lng": "-2.9349542456206983"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Liverpool",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2024-01-11T18:21:55.454Z",
+      "notes": "",
+      "position": {
+        "lat": "53.39956942256383",
+        "lng": "-2.9940356339164476"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Gouffern en Auge",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-01-11T18:26:11.564Z",
+      "notes": "",
+      "position": {
+        "lat": "48.715656311498385",
+        "lng": "0.12049153241415755"
+      },
+      "id": 98443202
     }
   ]
 }
