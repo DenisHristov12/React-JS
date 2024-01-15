@@ -9,6 +9,7 @@ import CityList from './components/CityList';
 import City from './components/City';
 import CountryList from './components/CountryList';
 import Form from './components/Form';
+import SpinnerFullPage from './components/SpinnerFullPage';
 
 // import Product from './pages/Product';
 // import Pricing from './pages/Pricing';
@@ -23,7 +24,6 @@ const Pricing = lazy(() => import('./pages/Pricing'));
 const Login = lazy(() => import('./pages/Login'));
 const AppLayout = lazy(() => import('./pages/AppLayout'));
 const PageNotFound = lazy(() => import('./pages/PageNotFound'));
-import SpinnerFullPage from './components/SpinnerFullPage';
 
 function App() {
   return (
