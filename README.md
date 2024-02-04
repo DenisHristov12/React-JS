@@ -1,2 +1,3 @@
 # React JS
- Learning React
+
+Learning React and deploying my biggest application
