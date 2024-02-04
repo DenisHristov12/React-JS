@@ -18,7 +18,7 @@ function Logo() {
   return (
     <StyledLogo>
       <Img
-        src="/logo-light.png"
+        src={src}
         alt="Logo"
       />
     </StyledLogo>
