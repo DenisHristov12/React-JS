@@ -1,5 +1,5 @@
 import Form from '../../ui/Form';
-import FormRow from '../../ui/FormRowVertical';
+import FormRow from '../../ui/FormRow';
 import Input from '../../ui/Input';
 import Spinner from '../../ui/Spinner';
 import { useSettings } from './useSettings';

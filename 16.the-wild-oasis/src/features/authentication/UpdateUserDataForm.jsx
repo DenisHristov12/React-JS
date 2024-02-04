@@ -7,7 +7,7 @@ import Form from '../../ui/Form';
 import Input from '../../ui/Input';
 
 import { useUser } from './useUser';
-import FormRowVertical from './../../ui/FormRowVertical';
+import FormRow from './../../ui/FormRow';
 import { useUpdateUser } from './useUpdateUser';
 
 function UpdateUserDataForm() {
@@ -48,13 +48,13 @@ function UpdateUserDataForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <FormRowVertical label="Email address">
+      <FormRow label="Email address">
         <Input
           value={email}
           disabled
         />
-      </FormRowVertical>
-      <FormRowVertical label="Full name">
+      </FormRow>
+      <FormRow label="Full name">
         <Input
           type="text"
           value={fullName}
@@ -62,16 +62,16 @@ function UpdateUserDataForm() {
           onChange={(e) => setFullName(e.target.value)}
           id="fullName"
         />
-      </FormRowVertical>
-      <FormRowVertical label="Avatar image">
+      </FormRow>
+      <FormRow label="Avatar image">
         <FileInput
           id="avatar"
           accept="image/*"
           disabled={isUpdating}
           onChange={(e) => setAvatar(e.target.files[0])}
         />
-      </FormRowVertical>
-      <FormRowVertical>
+      </FormRow>
+      <FormRow>
         <Button
           type="reset"
           variation="secondary"
@@ -80,7 +80,7 @@ function UpdateUserDataForm() {
           Cancel
         </Button>
         <Button disabled={isUpdating}>Update account</Button>
-      </FormRowVertical>
+      </FormRow>
     </Form>
   );
 }
