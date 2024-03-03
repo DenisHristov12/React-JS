@@ -69,7 +69,11 @@ function App() {
         onAddFriend={handleAddFriend}
       />
 
-      <Form onSplitBill={handleSplitBill} selectedFriend={selectFriend} />
+      <Form
+        onSplitBill={handleSplitBill}
+        selectedFriend={selectFriend}
+        key={selectFriend?.id}
+      />
     </div>
   );
 }
